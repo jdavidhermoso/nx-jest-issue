@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "myworkspace-dev-20190626110154-authRole",
+            "UnauthRoleArn": "arn:aws:iam::172161026844:role/myworkspace-dev-20190626110154-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::172161026844:role/myworkspace-dev-20190626110154-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "myworkspace-dev-20190626110154-deployment",
+            "UnauthRoleName": "myworkspace-dev-20190626110154-unauthRole",
+            "StackName": "myworkspace-dev-20190626110154",
+            "StackId": "arn:aws:cloudformation:eu-central-1:172161026844:stack/myworkspace-dev-20190626110154/0d8eddd0-97f1-11e9-8ba5-06537af0a09a"
+        },
+        "categories": {
+            "auth": {
+                "myworkspacedb147a00": {}
+            }
+        }
+    }
+}

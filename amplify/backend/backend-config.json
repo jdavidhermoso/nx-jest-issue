@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"myworkspacedb147a00": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
