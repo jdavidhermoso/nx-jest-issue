@@ -1,5 +1,61 @@
 # Myworkspace
 
+This is a repo to reproduce an issue with Jest and aws-amplify-angular.
+Any help will be appreciated.
+
+https://twitter.com/jdavidhermoso?lang=en
+
+I'm getting the following error:
+
+```
+ FAIL  apps/myapp/src/app/app.component.spec.ts
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
+
+    By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
+
+    Here's what you can do:
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/en/configuration.html
+
+    Details:
+
+    /Users/hermosoj/Desktop/dev/nx-jest-issue/node_modules/aws-amplify-angular/index.ts:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,global,jest){export { AmplifyAngularModule } from './src/aws-amplify-angular.module';
+                                                                                             ^^^^^^
+
+    SyntaxError: Unexpected token export
+
+
+
+      at ScriptTransformer._transformAndBuildScript (../../node_modules/@jest/transform/build/ScriptTransformer.js:471:17)
+      at Object.<anonymous> (src/app/app.component.ts:169:25)
+      at Object.<anonymous> (src/app/app.component.spec.ts:3:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        5.898s
+Ran all test suites.
+
+```
+
+Steps to reproduce:
+
+1- Clone this repo
+
+2- npm i
+
+3- `ng test`
+
+
 This project was generated using [Nx](https://nx.dev).
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
